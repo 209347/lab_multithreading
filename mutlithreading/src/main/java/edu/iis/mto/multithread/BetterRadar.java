@@ -16,6 +16,10 @@ public class BetterRadar implements Runnable {
         this.numberOfRockets = numberOfRockets;
     }
 
+    public void notice(Scud enemyMissle) {
+        launchPatriot();
+    }
+
     private void launchPatriot() {
         executor.execute(this);
     }
